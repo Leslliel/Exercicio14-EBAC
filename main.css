@@ -50,6 +50,10 @@ textarea {
     height: 150px;
 }
 
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: white;
+}
+
 @media (max-width: 767px) {
     .carousel-item img {
         height: 280px;
