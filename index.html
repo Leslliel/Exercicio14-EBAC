@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Arquitetos da EBAC</h1>
+            <button class="navbar-toggler mb-2" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-empresa" class="nav-link">
+                            <i class="bi bi-people me-1"></i>
+                            Sobre a empresa
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#nossa-equipe" class="nav-link">
+                            <i class="bi bi-people me-1"></i>
+                            Nossa equipe
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#projetos" class="nav-link">
+                            <i class="bi bi-easel2 me-1"></i>
+                            Projetos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Entre em contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-empresa">
+            <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slide/slide1.jpg" alt="Foto de prédio">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slide/slide2.jpg" alt="Foto de prédio">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slide/slide3.jpg" alt="Foto de prédio">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="images/Sobre/building-2559580_640.jpg" alt="Imagem do escritorio" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-lg-5">
+                            <h2 class="section-title">Sobre a empresa</h2>
+                            <p>Com uma vasta experiência no campo da arquitetura, buscamos constantemente inovação e excelência em cada projeto que realizamos. Nosso objetivo é entender profundamente as necessidades e desejos de nossos clientes, para criar soluções arquitetônicas personalizadas que superem suas expectativas.</p>
+                            <h2 class="section-title">Nossa abordagem</h2>
+                            <p>Nossa abordagem de trabalho é colaborativa e orientada para o cliente. Valorizamos a comunicação aberta e transparente, trabalhando em estreita parceria com nossos clientes para entender seus sonhos e transformá-los em projetos viáveis e realistas. Estamos comprometidos em oferecer um serviço de alta qualidade, do conceito à conclusão da construção.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="nossa-equipe" class="pt-5 pb-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Nossa equipe</h2>
+                <p class="text-center mb-5">Nossa equipe é composta por profissionais altamente qualificados e experientes, incluindo arquitetos, designers e especialistas em sustentabilidade. Nosso conhecimento técnico, combinado com uma visão criativa e atualizada das tendências arquitetônicas, nos permite entregar projetos inovadores e adaptados às necessidades individuais de cada cliente.</p>
+                <div class="row mt-4">
+                    <div class="col-md-4 equipe-arquitetura">
+                        <img src="images/equipe/equipe1.jpg" alt="Foto de um homem de negocios" class="d-block w-100">
+                        <h4 class="section-title text-center mt-2">Angelo A.</h4>
+                    </div>
+                    <div class="col-md-4 equipe-arquitetura">
+                        <img src="images/equipe/equipe2.jpg" alt="Foto de um homem de negocios" class="d-block w-100">
+                        <h4 class="section-title text-center mt-2">Gabriel T.</h4>
+                    </div>
+                    <div class="col-md-4 equipe-arquitetura">
+                        <img src="images/equipe/equipe3.jpg" alt="Foto de uma mulher de negocios" class="d-block w-100">
+                        <h4 class="section-title text-center mt-2">Bianca K.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-4">Nossos projetos</h2>
+                </div>
+                <div class="row mb-2">
+                        <nav class="nav nav-pills nav-projetos justify-content-center pe-0">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#predios" class="fw-bold nav-link text-black active">Prédios</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#casas" class="fw-bold nav-link text-black">Casas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#interiores" class="fw-bold nav-link text-black">Interiores</button>
+                        </nav>
+                </div>
+                <div class="row">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="predios">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/predios/predios (1).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/predios/predios (2).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/predios/predios (3).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/predios/predios (4).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/predios/predios (5).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="casas">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/casas/casa (1).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/casas/casa (2).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/casas/casa (3).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/casas/casa (4).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/casas/casa (5).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="interiores">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/interiores/interior (1).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/interiores/interior (2).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/interiores/interior (3).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/interiores/interior (4).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/interiores/interior (5).jpg" alt="Foto de um prédio" class="d-block w-100 mt-2 rounded">
+                                    <h5 class="text-colored fw-bold text-center">Arquitetura de prédio</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3 form-campo">
+                                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-3 form-campo">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3 form-campo">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone (opcional)</label>
+                                <input type="tel" name="telefone" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3 form-campo">
+                                <label for="mensagem" class="form-label fw-bold">Seu mensagem</label>
+                                <textarea name="textarea" class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold btn-dark">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-black"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-black"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-black"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua de Exemplo Ex. nº 504, Bairro de rua, São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./lib/messages_pt_BR.min.js"></script>
+    <script src="./lib/main.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
